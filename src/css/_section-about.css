@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    .client-logos {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.client-logos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.client-logos > div {
+    padding: 0 1rem;
+}
+
+.client-logo-oreilly {
+    width: 240px;
+}
