@@ -1,0 +1,10 @@
+.contact {
+    padding: 2rem 0;
+    background-color: var(--color-blue-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}

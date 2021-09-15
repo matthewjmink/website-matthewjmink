@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    background-color: var(--color-orange);
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 -2px 0 rgba(0 0 0 / .1) inset, 0 2px 0 rgba(255 255 255 / .1) inset;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--button-bg-hover);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 -2px 0 rgba(0 0 0 / .1) inset, 0 2px 0 rgba(255 255 255 / .1) inset, var(--active-control-shadow);
+}
+
+.btn:active {
+    box-shadow: 0 2px 0 rgba(0 0 0 / .1) inset, 0 -2px 0 rgba(255 255 255 / .1) inset, var(--active-control-shadow);
+    background-color: var(--button-bg-active);
+}

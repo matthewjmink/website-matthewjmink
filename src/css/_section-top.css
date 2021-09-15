@@ -1,0 +1,105 @@
+.top {
+    position: relative;
+    height: calc(50vw / 600 * 720);
+    overflow: hidden;
+    max-height: 760px;
+}
+.top-right {
+    margin-left: 50%;
+    width: 50%;
+}
+.hero {
+    background-color: var(--color-blue-light);
+}
+.hero h1,
+.hero-tag {
+    margin: 0;
+}
+.hero h1,
+.hero-lead,
+.hero-tag {
+    line-height: 1;
+}
+.hero-lead {
+    font-size: 1.25rem;
+    font-weight: normal;
+    display: block;
+}
+.hero-tag {
+    font-size: 0.75rem;
+}
+.speech-bubble {
+    background: white;
+    padding: 3.5rem 1rem;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-2rem);
+}
+.speech-bubble::before {
+    z-index: 0;
+    display: block;
+    content: '';
+    position: absolute;
+    background: white;
+    height: 3rem;
+    width: 50%;
+    transform: translate(0%, -170%) rotate(-5deg) skew(-75deg);
+    border-bottom-right-radius: 100%;
+    top: 100%;
+    left: 0;
+}
+.speech-bubble > * {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-card {
+    border-left: .75rem var(--color-orange) solid;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    box-shadow: 0 .25rem 1.25rem -.5rem rgba(0, 0, 0, .53);
+    background-color: #fff;
+    transform: translateY(-1.25rem) rotate(-4deg);
+}
+
+.cta-card p {
+    margin: 0;
+}
+
+.cta-card em {
+    font-style: normal;
+    color: var(--color-blue-desat);
+    white-space: nowrap;
+    display: block;
+}
+
+.cta-card .cta-card-link {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.cta-card-link a {
+    position: relative;
+}
+
+.cta-arrow {
+    fill: var(--color-orange);
+    width: 77px;
+    height: auto;
+    position: absolute;
+    left: calc(100% + .5rem);
+    top: 50%;
+}
+
+.matt-outline {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    right: 50%;
+    top: 2rem;
+    transform: translateX(2rem);
+    fill: var(--color-blue-desat);
+}

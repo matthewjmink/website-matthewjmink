@@ -1,0 +1,20 @@
+:root {
+    --color-orange: #d67f21;
+    --color-blue-light: #a2d9ed;
+    --color-blue-dark: #3d4cbe;
+    --color-blue-desat: #70939b;
+    --gray-1: #303435;
+    --gray-2: #6a7375;
+    --gray-3: #98a5a8;
+    --gray-4: #bacace;
+    --gray-5: #d1e3e8;
+    --gray-6: #dceff4;
+    --link-color: var(--color-orange);
+    --link-color-hover: #e48724;
+    --link-color-2: var(--color-blue-dark);
+    --link-color-2-hover: #354099;
+    --active-control-shadow: 0 0 0 5px rgb(214 127 33 / 40%);
+    --button-bg: var(--link-color);
+    --button-bg-hover: var(--link-color-hover);
+    --button-bg-active: #c97823;
+}

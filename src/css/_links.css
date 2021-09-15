@@ -1,0 +1,22 @@
+
+a {
+    color: var(--color-orange);
+    border-bottom: .125em solid currentColor;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--link-color-hover);
+}
+
+a.secondary {
+    color: var(--link-color-2);
+}
+
+a.secondary:hover,
+a.secondary:focus,
+a.secondary:active {
+    color: var(--link-color-2-hover);
+}
