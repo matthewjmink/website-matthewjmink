@@ -1,3 +1,6 @@
+.top {
+    border-bottom: 2rem solid var(--gray-5)
+}
 .top-right {
     margin-left: 50%;
     width: 50%;

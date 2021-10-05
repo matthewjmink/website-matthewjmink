@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget(path.join('.', input, cssDir));
 
     eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/index.js");
 
 
     eleventyConfig.on('afterBuild', buildCSS);
