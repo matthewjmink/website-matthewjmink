@@ -19,5 +19,6 @@ BREAKPOINTS
 /* Sections */
 @import './_section-top.css';
 @import './_section-work.css';
+@import './_section-testimonials.css';
 @import './_section-about.css';
 @import './_section-contact.css';
