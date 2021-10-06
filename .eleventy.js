@@ -19,7 +19,7 @@ function buildCSS() {
         .then((result) => {
             const cssOutputDir = path.dirname(cssOutput);
 
-            if (!fs.existsSync(cssOutputDir))fs.mkdirSync(path.dirname(cssOutput));
+            if (!fs.existsSync(cssOutputDir)) fs.mkdirSync(path.dirname(cssOutput));
 
             fs.writeFileSync(cssOutput, result.css);
             if (result.map) fs.writeFileSync(`${cssOutput}.map`, result.map.toString());
@@ -38,6 +38,18 @@ module.exports = function (eleventyConfig) {
         if (changedFiles.some(file => path.extname(file) === '.css')) {
             buildCSS();
         }
+    });
+
+    eleventyConfig.setBrowserSyncConfig({
+        middleware: [
+            {
+                route: '/',
+                handle: function (req, res, next) {
+                    if (req.method === 'GET') return next();
+                    res.writeHead(200).end();
+                }
+            }
+        ]
     });
 
     return {

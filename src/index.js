@@ -53,6 +53,40 @@
         nextBtn.addEventListener('click', () => goTo(currentSlide + 1));
     })();
 
+    // Contact Form
+    (function contactMatt() {
+        const form = $('#contactForm');
+        const button = form.querySelector('button').parentElement;
+        const alert = document.createElement('div');
+
+        const showAlert = (type, message) => {
+            alert.className = `alert alert-${type}`;
+            alert.innerText = message;
+            form.insertBefore(alert, button);
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+
+            const formData = new FormData(form);
+
+            alert.remove();
+
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(({ status, statusText }) => {
+                    if (status >= 400) throw new Error(statusText);
+                    showAlert('success', 'Thank you for reaching out! I\'ll get back to you as soon as I can');
+                })
+                .catch((error) => {
+                    showAlert('error', 'Something seems to have gone wrong while sending the message. Please try again, or give me a call instead.')
+                });
+        });
+    })();
+
     // Get Contact Info
     (function getContactInfo() {
         const phoneForm = $('#phoneForm');
