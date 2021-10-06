@@ -3,6 +3,32 @@
     background-color: var(--color-blue-light);
 }
 
+.phone-number {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.phone-number.obfuscate span {
+    border-radius: 4px;
+    height: 0.25em;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: var(--color-orange);
+    opacity: .75;
+}
+
+.phone-number.obfuscate .phone-area {
+    width: 1.8em;
+}
+
+.phone-number.obfuscate .phone-exchange {
+    width: 1.85em;
+}
+
+.phone-number.obfuscate .phone-line {
+    width: 2.6em;
+}
+
 @media (min-width: 992px) {
     .contact-grid {
         display: grid;

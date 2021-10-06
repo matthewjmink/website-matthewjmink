@@ -4,8 +4,13 @@
 
 label {
     display: block;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 0.75rem;
+}
+
+label .help {
+    font-weight: 400;
+    color: var(--gray-2);
 }
 
 .form-control {

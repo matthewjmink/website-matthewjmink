@@ -152,17 +152,18 @@
 
             <div class="contact-grid">
                 <form>
+                    <h3>Send me a message</h3>
                     <div class="form-group">
-                        <label for="name">What's your name?</label>
+                        <label for="name">Your name</label>
                         <input class="form-control" type="text" id="name" name="name">
                     </div>
                     <div class="form-group">
-                        <label for="contactInfo">How can I reach you?</label>
-                        <input class="form-control" type="text" id="contactInfo" name="contactInfo" placeholder="example@example.com / 715-555-1234">
+                        <label for="contactInfo">Your contact info <span class="help">(phone or email)</span></label>
+                        <input class="form-control" type="text" id="contactInfo" name="contactInfo">
                     </div>
                     <div class="form-group">
-                        <label for="description">Briefly describe your need</label>
-                        <textarea class="form-control" id="description" name="description"></textarea>
+                        <label for="description">Briefly describe your need <span class="help">(optional)</span></label>
+                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                     </div>
 
                     <div>
@@ -171,8 +172,15 @@
                 </form>
 
                 <div>
-                    <h3>Prefer a phone call?</h3>
+                    <h3>Call or text me</h3>
                     <p>Just prove you're not a robot, and I'll give you my phone number. Then, you can call or text me directly.</p>
+                    <p id="phone" class="phone-number obfuscate">
+                        (<span class="phone-area"></span>) <span class="phone-exchange"></span>&ndash;<span class="phone-line"></span>
+                    </p>
+                    <div class="form-group">
+                        <label for="name">What's my last name? (anti-robot check)</label>
+                        <input class="form-control" type="text" id="spamTest" name="spamTest">
+                    </div>
                     <p><button class="btn" id="showMeTheNumber">Show me the number!</button></p>
                 </div>
             </div>
