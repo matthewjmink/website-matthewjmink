@@ -3,6 +3,10 @@
     background-color: var(--color-blue-light);
 }
 
+.contact-grid > form {
+    margin-bottom: 3rem;
+}
+
 .phone-number {
     font-size: 1.25rem;
     font-weight: 900;

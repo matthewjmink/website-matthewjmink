@@ -84,3 +84,14 @@
     opacity: 0.3;
     cursor: default;
 }
+
+@media (max-width: 767px) {
+    .testimonial {
+        font-size: 1rem;
+    }
+
+    .testimonials-controls button {
+        max-width: 145px;
+        font-size: .825rem;
+    }
+}
